@@ -30,7 +30,7 @@
 	<table border="1">
 		<caption>Scores by Quarter</caption>
 	  <tr>
-		<th>Team Name</th>
+		<th rowspan="2">Team Name</th>
 		<th colspan="2">First Half</th>
 		<th colspan="2">Second Half</th>
 		<th>Final</th>
@@ -38,7 +38,7 @@
 	  </tr>
 
 	  <tr>
-	  	<th></th>
+	  	
 	  	<th>Q1</th>
 	  	<th>Q2</th>
 	  	<th>Q3</th>
@@ -107,11 +107,53 @@
 	  	 		</ul>
 	  	 	</ul>
 
+	<h2>FORM</h2>
+
+		<form>
+
+			<label for="fname">First Name:</label>
+			<input type="text" name="fname">
+			<label for="lname">Last Name:</label>
+			<input type="text" name="lname">
+
+			<br>
+
+			<label for="Sport">Favorite Sport:</label>
+			<select id="Sport" name="Sport">
+			  <option value="Football">Football</option>
+			  <option value="Baseball">Baseball</option>
+			  <option value="Basketball">Basketball</option>
+			</select>
 
 
-	
+			<br>
 
+			I have:
+			<input type="checkbox" name="Ihave" value="Attended">
+			<label for="Attended">Attended</label>
+			<input type="checkbox" name="Ihave" value="Played">
+			<label for="Played">Played</label>
+			<input type="checkbox" name="Ihave" value="Coached">
+			<label for="Coached">Coached</label>
+			<input type="checkbox" name="Ihave" value="BetOn">
+			<label for="BetOn">Bet On</label><br>
+			This Sport
 
+			<br>
+
+			For this sport I prefer the:
+			<input type="radio" id="Amature" name="level" value="Amature">
+			<label for="Amature">Amature</label>
+			<input type="radio" id="College" name="level" value="College">
+			<label for="College">College</label>
+			<input type="radio" id="Professional" name="level" value="Professional">
+			<label for="Professional">Professional</label>
+
+			<br>
+
+			<input type="submit" value="Submit Query">
+
+  </form>
 
 </body>
 </html>
